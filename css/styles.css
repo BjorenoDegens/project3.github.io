@@ -83,15 +83,15 @@ header .container {
 header .logo {
   display: flex;
   justify-content: center;
-  width: 20%;
-  height: 40px;
-  margin-left: 5%;
+  width: 100%;
+  height: 100%;
+  margin-right: 10%;
 }
 
 header .topnav {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  width: 100%;
 }
 
 header .topnav a {
