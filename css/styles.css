@@ -211,42 +211,13 @@ a {
   top: 50%;
   right: 15%;
 }
-.error {
-  position: absolute;
-  top: 40%;
-  left: 38%;
-}
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  box-sizing: border-box;
-  margin-top: 3px;
-  margin-bottom: 8px;
-  resize: none;
-}
-.contact {
-  position: absolute;
-  top: 20%;
-  left: 18%;
-}
-input[type="verstuur"] {
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-input[type="verstuur"]:hover {
-  transition-duration: 0.5s;
-  background-color: rgb(236, 120, 11);
-}
 .video {
   position: absolute;
   top: 15%;
   left: 25%;
+}
+.instagram1 {
+  position: absolute;
+  top: 9%;
+  left: 70%;
 }
