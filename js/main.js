@@ -6,7 +6,6 @@ if (feed.length != 0) {
     "IGQVJWZAkZAhdklzT1hBUDJvN015bGNpRTV4c3FlTTROMXZApajZABSGY4Yi00T0VTMWNIemFfZAnlBb1pZASndsTHRJVEktbk1FN3RBekJoVUp3OHNVQk5CaEFobzBJMnIwTzBROWNkQ3l5cmlkQ2pUUGlHNgZDZD";
   const fields =
     "id,media_type,media_url,thumbnail_url,timestamp,permalink,caption";
-  const limit = 6;
   let html = "";
 
   $.ajax({
@@ -14,9 +13,7 @@ if (feed.length != 0) {
       "https://graph.instagram.com/me/media?fields=" +
       fields +
       "&access_token=" +
-      token +
-      "&limit=" +
-      limit,
+      token,
     type: "GET",
     success: function (response) {
       const medias = response.data;
