@@ -8,7 +8,7 @@
 body {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .imageLeft {
@@ -27,7 +27,7 @@ body {
 
 .imageBot {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 40%;
   max-width: 110px;
   height: auto;
@@ -51,27 +51,16 @@ body {
   max-width: 90px;
 }
 
-.imageCoding {
-  position: absolute;
-  left: 50%;
-  top: 26%;
-  max-width: 80%;
-  justify-content: space-evenly;
-  height: auto;
-}
-
-.imageCoding img {
-  display: flex;
-  max-width: 64%;
-  border: 5px solid #555;
-  justify-content: space-evenly;
-}
-
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 80px;
+  padding: 10px 0px;
+  background-color: white;
 }
 
 header .container {
@@ -84,9 +73,8 @@ header .container {
 
 header .logo {
   display: flex;
-  justify-content: center;
   width: 100%;
-  height: 100%;
+  max-height: 60px;
   margin-right: 10%;
 }
 
@@ -112,146 +100,76 @@ header .topnav a.active {
   color: rgb(255, 123, 0);
 }
 
-.content-home {
+main {
   display: flex;
-  width: 100%;
-  height: 250px;
-  padding-left: 200px;
+  align-items: center;
+  min-height: 100vh;
+  padding: 160px 0px;
 }
 
-.introduction {
+.container {
+  width: 1200px;
+  height: auto;
+  padding: 0px 20px;
+  margin: auto;
+}
+
+.content-home {
   display: flex;
   align-items: center;
-  margin-top: 50px;
-}
-/* Locatie buttons */
-.introduction .content .button1 {
-  background-color: black;
-  margin-top: 15px;
-  border: none;
-  color: white;
-  padding: 8px 16px;
-  text-align: center;
-  display: flex;
-  font-size: 16px;
-  transition-duration: 0.5s;
-  cursor: pointer;
-}
-.buttonGit {
-  background-color: black;
-  position: absolute;
-  border: none;
-  color: white;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 16px;
-  transition-duration: 0.5s;
-  cursor: pointer;
-  width: 100px;
-  top: 66%;
-  right: 35%;
-  width: 120px;
-}
-.buttonLinked {
-  background-color: black;
-  position: absolute;
-  border: none;
-  color: white;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 16px;
-  transition-duration: 0.5s;
-  cursor: pointer;
-  width: 100px;
-  top: 66%;
-  right: 18%;
-  width: 120px;
-}
-/* Animatie voor de buttons */
-.introduction .content .button1:hover {
-  background-color: rgb(236, 120, 11);
-}
-.buttonGit:hover {
-  background-color: rgb(236, 120, 11);
-}
-.buttonLinked:hover {
-  background-color: rgb(236, 120, 11);
-}
-a {
-  text-decoration: none;
-}
-.overmijP {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-}
-.overmijH {
-  position: absolute;
-  top: 15%;
-  left: 20%;
-  font-size: 25px;
-}
-.introductieTeam {
-  position: absolute;
-  top: 20%;
-  left: 0%;
-  font-size: 25px;
-}
-.imageMan {
-  position: absolute;
-  left: 70%;
-  top: 15%;
+  width: 100%;
   height: auto;
 }
 
-.imageMan img {
+.content-home .introduction {
   display: flex;
-  max-width: 59%;
-  border: 5px solid #555;
+  flex-direction: column;
+  width: 50%;
 }
 
-.name {
-  position: absolute;
-  top: 50%;
-  right: 15%;
+h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
-.video {
-  position: absolute;
-  top: 15%;
-  left: 25%;
+
+p {
+  font-size: 18px;
+  line-height: 30px;
 }
-.instagram1 {
-  position: absolute;
-  top: 9%;
-  left: 70%;
+
+.content-home .image {
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
-.armands {
-  position: absolute;
-  top: 28%;
-  left: 50%;
+
+.content-home .image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
+
+a {
+  text-decoration: none;
+}
+
 .instagram_feed {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
   width: 100%;
-  column-gap: 30px;
+  column-gap: 60px;
   row-gap: 30px;
   height: auto;
   flex-wrap: wrap;
-  margin-left: 20%;
+  margin-bottom: 50px;
 }
 
 .instagram_feed div {
   display: flex;
   flex: 1;
   white-space: nowrap;
-  width: 30%;
+  width: 40%;
   min-width: 250px;
 }
 
@@ -263,20 +181,38 @@ a {
   display: block;
   width: 100%;
 }
-.insta {
+
+.instagram_overlay {
   position: absolute;
   top: 10%;
-  left: 90%;
+  right: 10px;
 }
+
 .instafoto {
-  width: 70%;
-  height: 50%;
+  display: block;
+  width: 150px;
+  height: auto;
 }
-.volg {
-  position: absolute;
-  left: 90%;
-  top: 25%;
-}
+
 .volgonspijl {
-  width: 80%;
+  width: 150px;
+}
+
+.onsteam {
+  display: flex;
+  width: 100%;
+}
+
+.onsteam .linkerbox,
+.onsteam .rechterbox {
+  width: 50%;
+}
+
+.introductie-team p {
+  margin-bottom: 30px;
+}
+
+.video {
+  display: block;
+  margin: auto;
 }
