@@ -47,7 +47,7 @@ body {
   font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
   text-align: center;
   /* img size is 50x50 */
-  background: url("/images/download.png") repeat 0 0;
+  background: url("images/download.png") repeat 0 0;
 
   -webkit-animation: bg-scrolling-reverse 0.92s infinite; /* Safari 4+ */
   -moz-animation: bg-scrolling-reverse 0.92s infinite; /* Fx 5+ */
